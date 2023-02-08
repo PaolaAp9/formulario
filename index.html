@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+      
+        <form>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" class="padrao-input" required>
+
+                <label for="date">Data de Nascimento:</label>
+                <input type="date" id="data" class="padrao-input" required>
+
+                <label for="cpf">CPF:</label>
+                <input type="number" id="cpf" class="padrao-input" required placeholder="XXXXXXXXX-XX">
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" class="padrao-input" placeholder="(XX)XXXXX-XXXX">
+
+                <label for="nome">Nome da Mãe:</label>
+                <input type="text" id="nome" class="padrao-input" required>
+
+            </fieldset>
+            <fieldset>
+                <legend>Endereço:</legend>
+
+                <label for="pais">País:</label>
+                <input type="text" id="pais" class="padrao-input" required>
+
+                <label for="cep">CEP:</label>
+                <input type="number" id="cep" class="padrao-input" required placeholder="XXXXX-XXX">
+                <div id="erro"></div>
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" class="padrao-input" required>
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" class="padrao-input" required>
+
+                <label for="rua">Endereço:</label>
+                <input type="text" id="rua" class="padrao-input" required>
+
+                <label for="numero">N°:</label>
+                <input type="number" id="numero" class="padrao-input" required>
+
+                <label for="rua">Complemento:</label>
+                <input type="text" id="Complemento" class="padrao-input" required>
+
+                <label for="uf">Estado:</label>
+                <input type="text" id="uf" class="padrao-input" required>
+
+            </fieldset>
+
+            <legend>Conta:</legend>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" class="padrao-input" required>
+
+            <label for="email">Repita o E-mail:</label>
+            <input type="email" id="email" class="padrao-input" required>
+
+            <label for="arquivo">Deseja enviar algum arquivo?:</label>
+            <input type="file" id="arquivo" class="padrao-input" required>
+
+            <fieldset>
+
+                <legend>Crie um Login e Senha</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" class="padrao-input">
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" class="padrao-input">
+
+            </fieldset>
+        </form>
+        <form>
+            <fieldset>
+                <legend>Como devemos entrar em contato?</legend>
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"
+                        checked>E-mail </label>
+                <label for="radio-telefone"><input type="radio" name="contato" id="radio-telefone">Telefone </label>
+            </fieldset>
+
+            <label><input type="checkbox">Deseja receber novidades por email?</label>
+            <label for="radio-email"></label>
+            <input type="submit" value="Enviar" class="enviar">
+
+
+        </form>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+
+</html>
